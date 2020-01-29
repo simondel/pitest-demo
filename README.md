@@ -22,3 +22,14 @@ mvn org.pitest:pitest-maven:mutationCoverage
 ```
 
 Look in `./target/pit-reports/YYYYMMDDHHMM/index.html` for your report!
+
+## Oifficial Pitest report
+
+This demo includes a modern html report. If you however want the official Pitest report, change the configuration of pitest plugin by removing this configuration block:
+```xml
+<configuration>
+    <outputFormats>
+        <format>HTML2</format>
+    </outputFormats>
+</configuration>
+```
